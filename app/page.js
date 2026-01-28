@@ -150,7 +150,7 @@ export default function HomePage() {
             return (
               <div
                 {...refProp}
-                key={room._id}
+                key={room._id || `room-${index}`}
                 className="border p-4 rounded-2xl shadow hover:scale-105 transition-transform duration-300"
               >
                 <h3 className="text-xl font-semibold">{room.title}</h3>
